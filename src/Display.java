@@ -3,7 +3,7 @@ public class Display {
     private Bankomat bankomat;
 
     public Display(Bankomat bankomat) {
-         this.bankomat = bankomat;
+        this.bankomat = bankomat;
     }
 
     public void changeSum(int money) { //изменения суммы в банкомате

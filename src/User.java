@@ -1,9 +1,9 @@
 public class User {
 
     private int userSum;
-
     private Bankomat bankomat;
     private Display display;
+
     public User(int userSum) {
         this.userSum = userSum;
     }
@@ -15,8 +15,7 @@ public class User {
     public void linkBankomat(Bankomat bankomat) { //привязать банкомат к человеку
         this.bankomat = bankomat;
         display = bankomat.linkDisplay(); //получили конкретный дисплей
-        bankomat.linkUser(this);
-
+        bankomat.linkUser(this); //привязать человека к банкомату
     }
 
     public void addSum(int money) {
@@ -37,6 +36,4 @@ public class User {
             display.sayDisplayError();  //дисплей выводит ошибку
         }
     }
-
-
 }

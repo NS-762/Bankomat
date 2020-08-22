@@ -28,7 +28,6 @@ public class Bankomat {
         display.sayDisplayAdd(money);
     }
 
-
     public Display linkDisplay() {
         return display;
     }
